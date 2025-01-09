@@ -1,9 +1,9 @@
 <p align="center">
 </p>
 
-<h1>Cisco Packet Tracer |  Hotel Topology<h1>
+<h1>Cisco Packet Tracer |  Company Topology<h1>
   
-This project focuses on designing a functional and efficient network for a three-story hotel using Cisco Packet Tracer. The network will support both business operations and guest services while ensuring scalability, security, and ease of management. Each floor has distinct departments that need tailored connectivity and configurations based on their specific needs.
+This report outlines the design and implementation of a hierarchical network topology to support a new three-floor building. The network will ensure redundancy, scalability, and efficient communication across departments while maintaining robust security. The design also includes integration with two ISPs for internet connectivity and redundancy.
 
 <h2>Environments and Technologies Used</h2>
 
