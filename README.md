@@ -41,50 +41,74 @@ Network Topology and Redundancy
 Core Layer:
 Two routers will be deployed to connect the internal network to the internet via two ISPs. Each router will connect to one ISP using the following public IP subnets:
 
+
 ISP1: 195.136.17.0/30 and 195.136.17.4/30
+
 ISP2: 195.136.17.8/30 and 195.136.17.12/30
 
 Static routes will be configured for external connectivity.
 Distribution Layer:
+
 Two multilayer switches will provide redundancy and handle inter-VLAN routing. Both switches will be interconnected and configured for High Availability (HA).
+
 The switches will connect to the core routers and the access switches for each floor.
 
 Access Layer:
 Each floor will have access switches to connect end-user devices and wireless access points.
 
 Department and Floor Configuration
-First Floor
+First Floor:
+
 Departments: Sales and Marketing, Human Resources, and Logistics.
+
 Users: 120 per department.
+
 VLANs:
 VLAN 10: Sales and Marketing
+
 VLAN 20: Human Resources and Logistics
+
 IP Subnets:
+
 VLAN 10: 172.16.1.0/25
+
 VLAN 20: 172.16.1.128/25
 
 Second Floor
 Departments: Finance and Accounts, Administrator, and Public Relations.
-Users: 120 per department.
+
+Users: 120 per department
+
 VLANs:
+
 VLAN 30: Finance and Accounts
+
 VLAN 40: Administrator and Public Relations
+
 IP Subnets:
+
 VLAN 30: 172.16.2.0/25
+
 VLAN 40: 172.16.2.128/25
 
 Third Floor
 Departments: ICT, Server Room.
+
 Users:
 ICT: 120 users
+
 Server Room: 12 devices (static IPs)
 
 VLANs:
+
 VLAN 50: ICT
+
 VLAN 60: Server Room
 
 IP Subnets:
+
 VLAN 50: 172.16.3.0/25
+
 VLAN 60: 172.16.3.128/28 (for static IP allocation)
 
 
