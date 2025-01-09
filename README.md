@@ -16,10 +16,15 @@ This report outlines the design and implementation of a hierarchical network top
 <h2>Objectives</h2>
 
 -Provide seamless and secure communication across all departments.
+
 -Ensure redundancy at every network layer using two routers and two multilayer switches.
+
 -Enable dynamic IP address allocation for all devices except for those in the server room, which will use static IP addresses.
+
 -Support inter-VLAN communication through multilayer switches configured for routing and switching functionalities.
+
 -Facilitate wireless connectivity for users in each department.
+
 -Maintain continuous internet access through dual ISP connections.
 
 
