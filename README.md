@@ -111,20 +111,7 @@ VLAN 50: 172.16.3.0/25
 
 VLAN 60: 172.16.3.128/28 (for static IP allocation)
 
-
-
-
-</p>
-<br />
-
-<p>
-</p>
-<p>
-<h2>2. Wireless Network Configuraion</h2>t
-
--Each department will have a dedicated wireless network (SSID) mapped to its VLAN.
--Access points will be configured to broadcast department-specific SSIDs and support secure authentication.
-
+![image](https://github.com/user-attachments/assets/6598ad01-a156-4746-9a43-85de9f94f955)
 
 </p>
 <br />
@@ -133,11 +120,22 @@ VLAN 60: 172.16.3.128/28 (for static IP allocation)
 
 </p>
 <p>
-<h2>3. DHCP and Static IP Allocation</h2>
+<h2>.2 DHCP and Static IP Allocation</h2>
 To enable communication between routers and ensure efficient route advertisement, OSPF (Open Shortest Path First) was configured. The following configurations were implemented:
 Each router was assigned to OSPF process 1.
 Subnets associated with each router’s interfaces were advertised using the network command.
 
+**Core Router 1 IP Routes**
+
+![image](https://github.com/user-attachments/assets/ac273ea6-7c6b-45a0-9cd2-05b67af23f58)
+
+**Core Router 2 IP Routes**
+
+
+![image](https://github.com/user-attachments/assets/c82f7077-c970-4d3d-8e8a-435e6200ef8f)
+
+
+
 </p>
 <br />
 </p>
@@ -147,13 +145,22 @@ Subnets associated with each router’s interfaces were advertised using the net
 
 </p>
 <p>
-<h2>4. Device Settings</h2>
+<h2>3. Device Settings</h2>
   
 Basic device settings will be configured on all routers and switches:
+
 -Hostnames for identification.
+
+  a.By using hostname configuration
+  
 -Console and enable passwords for secure access.
+
+  a.By using username admin password 7 configuration 
+  
 -Banner messages for unauthorized access warnings.
--ip domain-lookup will be disabled to prevent DNS resolution delays.
+
+  a.No Unauthorized Access will be displayed on all router and switches if attempted to login
+
 
 </p>
 <br /></p>
@@ -163,23 +170,20 @@ Basic device settings will be configured on all routers and switches:
 
 </p>
 <p>
-<h2>5. Inter-VLAN Routing</h2>
+<h2>4.VLANs </h2>
+  
 -Multilayer switches will handle inter-VLAN routing by being assigned IP addresses on each VLAN interface.
 -Inter-VLAN communication will be verified through proper route configurations and testing.
 
+**Multilayer Switch 1 VLANs**
 
-</p>
-<br /></p>
-<br />
 
-<p>
+![image](https://github.com/user-attachments/assets/4b75ddb2-b7fd-40e2-9b33-7ba67dc2681a)
 
-</p>
-<p>
-<h2>6. Redundancy for Internet Access</h2>
--Each router will connect to both ISPs using static routes.
--Failover mechanisms will be configured to ensure uninterrupted internet access.
+**Multilayer Switch 2 VLANs**
 
+
+![image](https://github.com/user-attachments/assets/328d672d-9ea9-49ff-8d75-4fc56da95640)
 
 </p>
 <br />
@@ -192,11 +196,20 @@ Basic device settings will be configured on all routers and switches:
 </p>
 <p>
 <h2>7. Testing</h2>
+  
 -Test inter-VLAN communication using ping tests between devices in different VLANs.
--Ensure dynamic IP address allocation through DHCP for all VLANs.
--Verify static IP assignments and connectivity for devices in VLAN 60.
--Test internet connectivity and failover between ISPs.
--Validate wireless network functionality by connecting devices to the department-specific SSIDs.
+
+**HR PC to ISP2**
+
+![image](https://github.com/user-attachments/assets/f8dade28-56c5-41ea-a929-00f179cdcf7b)
+
+**ICT PC to ISP1**
+
+![image](https://github.com/user-attachments/assets/2a92d716-a2a9-482c-858c-93f817113f0a)
+
+**Sales PC to Admin PC**S
+
+![image](https://github.com/user-attachments/assets/9d21bccc-c280-4ccc-bce5-dd0bb8168c78)
 
 
 </p>
