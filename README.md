@@ -195,7 +195,7 @@ Basic device settings will be configured on all routers and switches:
 
 </p>
 <p>
-<h2>7. Testing</h2>
+<h2>5. Testing</h2>
   
 -Test inter-VLAN communication using ping tests between devices in different VLANs.
 
