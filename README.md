@@ -120,7 +120,7 @@ VLAN 60: 172.16.3.128/28 (for static IP allocation)
 
 </p>
 <p>
-<h2>.2 DHCP and Static IP Allocation</h2>
+<h2>2. DHCP and Static IP Allocation</h2>
 To enable communication between routers and ensure efficient route advertisement, OSPF (Open Shortest Path First) was configured. The following configurations were implemented:
 Each router was assigned to OSPF process 1.
 Subnets associated with each router’s interfaces were advertised using the network command.
